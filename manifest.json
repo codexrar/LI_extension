@@ -1,0 +1,31 @@
+{
+    "manifest_version": 3,
+    "name": "Linkedin User Extension",
+    "description": "Extension para Usuario de linkedin Realizado por Santiago Avila",
+    "version": "1.0",
+    "action": {
+        "default_popup": "index.html",
+        "default_icon": {
+            "16": "/imagen/icon/ico16.png",
+            "32": "/imagen/icon/ico32.png",
+            "48": "/imagen/icon/ico48.png",
+            "128": "/imagen/icon/ico128.png"
+        }
+    },
+    "icons": {
+        "16": "/imagen/icon/ico16.png",
+        "32": "/imagen/icon/ico32.png",
+        "48": "/imagen/icon/ico48.png",
+        "128": "/imagen/icon/ico128.png"
+    },
+    "content_scripts": [
+        {
+            "js": [
+                "scripts/content.js"
+            ],
+            "matches": [
+                "https://www.linkedin.com/*"
+            ]
+        }
+    ]
+}
